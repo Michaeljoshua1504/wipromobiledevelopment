@@ -1,0 +1,166 @@
+/* Reset some default browser styles */
+body, h1, h2, p, div, header, main, footer, form, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header, footer {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+main.container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.column {
+    background: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ddd;
+    flex: 1 1 30%;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+}
+
+.column:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    margin-top: 20px;
+}
+
+/* Navigation Bar Styles */
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+
+.nav-menu li {
+    margin: 0 1rem;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+/* Contact Form Styles */
+.contact-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.contact-form div {
+    margin-bottom: 10px;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"] {
+    width: calc(100% - 110px);
+    padding: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main.container {
+        flex-direction: column;
+    }
+
+    .column {
+        flex: 1 1 100%;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+    }
+
+    .nav-menu li {
+        margin: 0.5rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header, footer {
+        padding: 10px;
+    }
+
+    .contact-form {
+        padding: 10px;
+    }
+
+    label {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    input[type="text"], input[type="email"] {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+    }
+}
