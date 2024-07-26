@@ -1,0 +1,1 @@
+for the pages added the UI and responsive and working on the backend. 

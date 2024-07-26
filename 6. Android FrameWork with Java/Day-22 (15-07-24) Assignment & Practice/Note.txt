@@ -1,0 +1,1 @@
+Added Menu inside the app and worked on it functionality and the final project codes of frontend and backend are in this folder.

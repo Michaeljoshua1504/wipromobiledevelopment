@@ -1,0 +1,16 @@
+{
+  "name": "backendvehicleinsuranceapp",
+  "version": "1.0.0",
+  "description": "backendvehicleinsuranceapp application with Express and Mongoose",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.5.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
